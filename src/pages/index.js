@@ -4,27 +4,23 @@ import {
   Box,
   ChakraProvider,
   Container,
-  Flex,
   Heading,
   Stack,
+  Text,
 } from "@chakra-ui/react"
+
+import Header from "../components/Header"
 
 export default function Home() {
   return (
     <ChakraProvider>
-      <Flex as="header" padding="1.5rem" bg="teal.500" color="white">
-        <Flex align="center" mr={5}>
-          <Heading as="h1" size="md">
-            Header
-          </Heading>
-        </Flex>
-      </Flex>
+      <Header />
       <Container>
         <Stack as={Box} textAlign={"center"}>
           <Heading>こんにちは、こんにちは！</Heading>
-          <div>
+          <Text>
             “あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。”
-          </div>
+          </Text>
         </Stack>
       </Container>
     </ChakraProvider>
