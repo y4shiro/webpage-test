@@ -1,6 +1,13 @@
 import React from "react"
 
-import { ChakraProvider, Flex, Heading } from "@chakra-ui/react"
+import {
+  Box,
+  ChakraProvider,
+  Container,
+  Flex,
+  Heading,
+  Stack,
+} from "@chakra-ui/react"
 
 export default function Home() {
   return (
@@ -12,7 +19,14 @@ export default function Home() {
           </Heading>
         </Flex>
       </Flex>
-      <div>Content</div>
+      <Container>
+        <Stack as={Box} textAlign={"center"}>
+          <Heading>こんにちは、こんにちは！</Heading>
+          <div>
+            “あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。”
+          </div>
+        </Stack>
+      </Container>
     </ChakraProvider>
   )
 }
